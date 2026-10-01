@@ -1,0 +1,36 @@
+{
+  "name": "@northwall/sparkline",
+  "version": "2.1.0",
+  "description": "tiny sparklines",
+  "type": "module",
+  "main": "./src/sparkline.js",
+  "exports": {
+    ".": "./src/sparkline.js",
+    "./react": "./src/react.js",
+    "./package.json": "./package.json"
+  },
+  "bin": {
+    "sparkline": "./src/cli.js"
+  },
+  "sideEffects": false,
+  "files": ["src"],
+  "engines": {
+    "node": ">=18.3"
+  },
+  "peerDependencies": {
+    "react": ">=17"
+  },
+  "peerDependenciesMeta": {
+    "react": { "optional": true }
+  },
+  "scripts": {
+    "test": "vitest run",
+    "lint": "eslint src",
+    "size": "size-limit"
+  },
+  "devDependencies": {
+    "eslint": "^9.0.0",
+    "size-limit": "^11.0.0",
+    "vitest": "^1.2.0"
+  }
+}
